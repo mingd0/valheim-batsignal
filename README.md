@@ -1,4 +1,4 @@
-# valheim-batsignal
+# Valheim Batsignal
 
 When the village is under attack, you don't have time to think - let alone text all your buddies for help. The Valheim Batsignal will do this for you, with the click of a single button. Simply select your fellow warriors, and blow the horn! 
 
