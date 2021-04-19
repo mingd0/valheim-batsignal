@@ -8,7 +8,7 @@ const sendText = require("./send-text");
 
 // Configure server
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Use public folder for static files
 app.use(express.static(path.join(__dirname, "/public")));
