@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Valheim Batsignal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hero">
+    <h1 class="banner">Valheim Batsignal</h1>
+  </div>
+  <div class="container">
+    <form>
+      <div class="wrapper">
+        <h2 id="tester" class="text-md">Who Will You Summon?</h2>
+        <div class="name-button-wrapper">
+          <label class="name-button" for="kipson">Kipson</label>
+          <input type="checkbox" id="kipson" class="visually-hidden">
+          <label class="name-button" for="assman">Assman</label>
+          <input type="checkbox" id="assman" class="visually-hidden">
+          <label class="name-button" for="glass">Glass</label>
+          <input type="checkbox" id="glass" class="visually-hidden">
+        </div>
+      </div>
+      <div class="wrapper">
+        <label class="text-md">Enter Your Message:</label>
+        <textarea class="message-box" name="msg" id="msg" cols="40" rows="3"></textarea>
+      </div>
+      <div class="wrapper">
+        <label class="text-md" for="">Blow the Horn!</label>
+        <button id="hornBtn" value="" onclick="">
+          <img src="horn-icon.svg" alt="">
+        </button>
+      </div>
+    </form>
+  </div>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <audio id="hornSound" src="horn.mp3" preload="auto"></audio>
+</body>
+
+</html>

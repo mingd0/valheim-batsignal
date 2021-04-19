@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-family: 'Skranji', cursive;
+    font-size: 16px;
+}
+
+body {
+    background-color: #2E2E2E;
+    color: #2E2E2E;
+    user-select: none;
+    font-weight: normal;
+}
+
+.hero {
+    background: url(iceland-background-md.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 66.7vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    position: relative;
+    top: 13%;
+
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.text-md {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.name-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.name-button {
+    font-size: 1.4rem;
+    letter-spacing: 0.2em;
+    border: 4px solid white;
+    background: white;
+    padding-top: 2rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    color: #2E2E2E;
+    cursor: pointer;
+}
+
+.name-button-toggled {
+    background: #FFE787;
+}
+
+.message-box {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    font-family: 'Skranji', cursive;
+    font-size: 1rem;
+}
+
+#hornBtn {
+    border-radius: 50%;
+    background: none;
+    border: none;
+}
+
+#hornBtn:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 17px;
+    }
+
+    .banner {
+        font-size: 4.5rem;
+    }
+
+    .text-md {
+        font-size: 2.5rem;
+    }
+
+    .name-button {
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 1201px) {
+    html {
+        font-size: 22px;
+    }
+
+    .banner {
+        letter-spacing: 1rem;
+    }
+}
+
